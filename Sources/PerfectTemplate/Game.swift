@@ -113,7 +113,7 @@ class Game {
     }
     
     private func randomPlayer() -> Player {
-        let randomIdx = Int(arc4random() % UInt32(self.players.count))
+        let randomIdx = Int(Int.random(in:0...self.players.count))
         return players[randomIdx]
     }
     
